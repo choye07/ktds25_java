@@ -10,11 +10,17 @@ public class ArtithmaticProblem1 {
 		
 		int minutes = 5;
 		int seconds = 50;
-		int time =0;
+		int time = 0;
 		
-		time = (minutes*60)+(seconds%60);
+		time = (minutes * 60)+(seconds %  60);
 		System.out.println(time);
 //		System.out.println(time+"초");
+		
+		//=================================================================================
+		
+		//강사님 답//
+		//int time = minutes * 60 + seconds;
+//		System.out.println(minutes + "분 " + seconds + "초는 "+ time + "초 입니다.");
 		
 	}
 }
