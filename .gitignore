@@ -3,3 +3,4 @@
 *.project
 first_java_program/.settings/
 *.class
+*.prefs
