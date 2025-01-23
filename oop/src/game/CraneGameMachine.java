@@ -13,21 +13,25 @@ public class CraneGameMachine {
 				isInsertCoin = true;
 			}
 		}
+		
 		public int doGame() {
 			if(isInsertCoin) {
 				Random random = new Random();
 				
 				int result = random.nextInt(2);
-				dolls = result;
+				dolls -= result;
 				isInsertCoin =false;
 				return result;
 			}
 			
 			return 0;
 		}
+		
+		
+		
 		public static void main(String[]args) {
 			CraneGameMachine cgm  = new CraneGameMachine();
-			cgm.isInsertCoin=true;
+			cgm.isInsertCoin=false;
 			cgm.dolls=10;
 			int result = 0;
 			while(true) {
