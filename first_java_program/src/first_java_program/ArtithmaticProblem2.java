@@ -13,14 +13,9 @@ public class ArtithmaticProblem2 {
 		int minutes = 0;
 		int seconds = 0;
 		
-		minutes = processTime / 60;
-		seconds = processTime % 60;
+		minutes = processTime/60;
+		seconds = processTime%60;
 		
 		System.out.println(minutes+"분 "+ seconds+"초");
-		//=================================================================================
-		
-		// 위는 동일
-		// 강사님 답//
-//		System.out.println(processTime+"초는 "+minutes+"분 "+ seconds+"초 입니다.");
 	}
 }

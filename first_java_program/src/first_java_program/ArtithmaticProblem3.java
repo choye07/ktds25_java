@@ -13,14 +13,11 @@ public class ArtithmaticProblem3 {
 		 * 변경공식: (섭씨 × 9/5) + 32 = 화씨
 		 */
 		 
-		int celsius =32;
-		 int fahrenheit  = (celsius *  9 / 5 ) + 32;
+		int celsius =30;
+		int fahrenheit =0;
 		
-//		double celsius =32;
-//		
-//		double fahrenheit = (celsius *  9 / 5 ) + 32; --> 실수로 변환해서 사용하면 딱 떨어지는 숫자들도 정확하게 출력 가능.
-//		System.out.println(fahrenheit);
-		System.out.println("섭씨 "+celsius+" 도는 화씨 "+fahrenheit +"도 입니다.");
+		fahrenheit = (celsius*9/5)+32;
+		System.out.println(fahrenheit);
 		
 	}
 }
