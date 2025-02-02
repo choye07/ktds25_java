@@ -8,33 +8,58 @@ import java.util.Scanner;
  */
 public class Q3_Calculator {
 	
-	public void CalculatorPlus(String sign,int number1,int number2){
+	public void calculatorPlus(String sign,int number1,int number2){
 		
-		System.out.println(number1+" "+sign+" = "+number2);
-		
-	}
-	
-	public void CalculatorMinus(String sign,int number1,int number2){
-		
-		
+		System.out.println(number1+" "+sign+" "+number2+" = "+ (number2+number1));
 		
 	}
 	
-	public void CalculatorMultiple(String sign,int number1,int number2){
+	public void calculatorMinus(String sign,int number1,int number2){
 		
-		
+		System.out.println(number1+" "+sign+" "+number2+" = "+ (number2-number1));
 		
 	}
 	
-	public void CalculatorDivision(String sign,int number1,int number2){
+	public void calculatorMultiple(String sign,int number1,int number2){
 		
+		System.out.println(number1+" "+sign+" "+number2+" = "+ (number2*number1));
 		
+	}
+	
+	public void calculatorDivision(String sign,int number1,int number2){
+		
+		System.out.println(number1+" "+sign+" "+number2+" = "+ (number2/number1));
 		
 	}
 	
 	public static void main(String[]args) {
 		Scanner in =new Scanner(System.in);
-		
+		Q3_Calculator calculator = new Q3_Calculator();
+		while(true) {
+			System.out.println("계산기 프로그램 시작 (종료: exit)");
+			String sign = in.next();
+			
+			if(sign.equals("exit")){
+				System.out.println("프로그램을 종료합니다.");
+				break;
+			}else {				
+				int number1= in.nextInt();
+				int number2 = in.nextInt();
+				
+				if(sign.equals("+")) {
+					calculator.calculatorPlus(sign,number1,number2);
+				}else if(sign.equals("-")) {
+					
+					calculator.calculatorMinus(sign, number1, number2);
+				}else if(sign.equals("*")) {
+					
+					calculator.calculatorMultiple(sign, number1, number2);
+				}else if(sign.equals("/")) {
+					
+					calculator.calculatorDivision(sign, number1, number2);
+				}
+			}
+		}
 		
 		
 	}
