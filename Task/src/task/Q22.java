@@ -6,10 +6,10 @@ package task;
  */
 public class Q22 {
 
-	public static void main(String[]arg) {
-		for(int i=1; i<51; i++) {
-			if(i>=30 && i<40) {
-				System.out.print(i+" ");
+	public static void main(String[] arg) {
+		for (int i = 1; i < 51; i++) {
+			if (i >= 30 && i < 40) {
+				System.out.print(i + " ");
 			}
 		}
 	}

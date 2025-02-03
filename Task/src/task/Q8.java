@@ -5,12 +5,12 @@ package task;
  * 곱이 할당된 변수의 값을 출력해본다.
  */
 public class Q8 {
-	public static void main(String[]args) {
+	public static void main(String[] args) {
 		int number1 = 4;
 		int number2 = 9;
-		
-		int multiple = number1*number2;
-		
+
+		int multiple = number1 * number2;
+
 		System.out.println(multiple);
 	}
 }

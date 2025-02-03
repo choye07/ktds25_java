@@ -1,6 +1,7 @@
 package task.store;
 
 public class Seller {
+	
 	/**
 	 * 상품 이름
 	 */
@@ -37,36 +38,13 @@ public class Seller {
 	}
 
 	public String getProduct() {
-		return product;
-	}
-
-	public void setProduct(String product) {
-		this.product = product;
+		return this.product;
 	}
 
 	public int getStock() {
-		return stock;
+		return this.stock;
 	}
-
-	public void setStock(int stock) {
-		this.stock = stock;
-	}
-
-	public int getPrice() {
-		return price;
-	}
-
-	public void setPrice(int price) {
-		this.price = price;
-	}
-
-	public int getMoneyBox() {
-		return moneyBox;
-	}
-
-	public void setMoneyBox(int moneyBox) {
-		this.moneyBox = moneyBox;
-	}
+	
 	/**
 	 * 판매자의 상품 수, 상품 가격, 금고 현황
 	 */

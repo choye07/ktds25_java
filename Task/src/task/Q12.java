@@ -6,15 +6,15 @@ package task;
  * 단, 소수점 이하의 자리수는 2자리만 저장해 출력한다.
  */
 public class Q12 {
-	public static void main(String[]args) {
-		int num1=(int)(Math.random()*10+1);
-		int num2=(int)(Math.random()*10+1);
-		
-		double division = (double)num1/num2;
-		double result = Math.round(division*100)/100.0;
-		
-		System.out.println("num1:"+num1+" num2:"+num2);
+	public static void main(String[] args) {
+		int num1 = (int) (Math.random() * 10) + 1;
+		int num2 = (int) (Math.random() * 10) + 1;
+
+		double division = (double) num1 / num2;
+		double result = Math.round(division * 100) / 100.0;
+
+		System.out.println("num1: " + num1 + " num2: " + num2);
 		System.out.println(result);
-		
+
 	}
 }

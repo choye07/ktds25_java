@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Consumer {
 	
-	Seller seller;
 	/**
 	 * 장바구니
 	 */
@@ -21,32 +20,19 @@ public class Consumer {
 		this.wallet = wallet;
 	}
 
-	public int getShoppingBasket() {
-		return shoppingBasket;
-	}
-
-	public void setShoppingBasket(int shoppingBasket) {
-		this.shoppingBasket = shoppingBasket;
-	}
-
-	public int getWallet() {
-		return wallet;
-	}
-
-	public void setWallet(int wallet) {
-		this.wallet = wallet;
-	}
 	
 	public void printBasket() {
 		System.out.println("장바구니");
 		System.out.println("========================");
-		System.out.println("상품 갯수: "+this.shoppingBasket);
+		System.out.println("상품 갯수: "
+		+this.shoppingBasket);
 		System.out.println("지갑: "+this.wallet);
 	}
 	
 	public void buyProduct(	Seller seller, int stock) {
 			int sellStock =seller.getStock();
-		   int totalPrice = seller.sellProduct(this.wallet,stock); // 판매자에게 구매 요청
+			
+			int totalPrice = seller.sellProduct(this.wallet,stock); // 판매자에게 구매 요청
 		    if (totalPrice > 0 && this.wallet >= totalPrice) { // 구매자가 돈이 충분할 때만 구매 진행
 		        this.wallet -= totalPrice; // 구매자의 지갑에서 돈 차감
 		        if(sellStock<stock) {
