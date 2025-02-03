@@ -5,10 +5,19 @@ import java.util.Scanner;
 import com.ktdsuniversity.edu.member.management.Member;
 
 public class Article {
-
-	Member author;
-	String title;
-	
+	/**
+	 * Member 클래스를 멤버변수로 선언.
+	 */
+	private Member author;
+	/**
+	 * Aticle 멤버변수 제목
+	 */
+	private String title;
+	/**
+	 * 생성자
+	 * @param author
+	 * @param title
+	 */
 	public Article(Member author, String title) {
 		this.author = author;
 		this.title=title;
