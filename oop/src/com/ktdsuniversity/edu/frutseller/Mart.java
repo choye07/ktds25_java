@@ -11,6 +11,11 @@ public class Mart {
 		coupang.sell(1); // money, fruitStock이 변경
 		coupang.sell(30); // money, fruitStock이 변경
 		
+		coupang.sell();
+		coupang.sell();
+		coupang.sell();
+		coupang.sell();
+		
 		System.out.println(coupang.getMoney());
 		System.out.println(coupang.getFruitStock());
 		
