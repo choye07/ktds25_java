@@ -7,7 +7,7 @@ package com.ktdsuniversity.edu.staticexam;
 public class CarMain {
 	public static void main(String[]args) {
 		
-		System.out.println(INSTANCE_COUNT);
+		System.out.println(Car.INSTANCE_COUNT);
 		
 		Car car1 = new Car("경차");
 		System.out.println(car1.INSTANCE_COUNT);
