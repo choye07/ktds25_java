@@ -15,21 +15,24 @@ public class Q3 {
 				System.out.print(", ");
 			}
 		}
-		System.out.println("]");
+		System.out.println("]");              
 	}
 
 	public static void main(String[] args) {
 		int[] numArr = new int[10];
-		numArr[0] = 1;
-		numArr[1] = 2;
-		numArr[2] = 3;
-		numArr[3] = 4;
-		numArr[4] = 5;
-		numArr[5] = 6;
-		numArr[6] = 7;
-		numArr[7] = 8;
-		numArr[8] = 9;
-		numArr[9] = 10;
+		for(int i=0; i<numArr.length; i++) {
+			numArr[i] = i+1; 
+		}
+//		numArr[0] = 1;
+//		numArr[1] = 2;
+//		numArr[2] = 3;
+//		numArr[3] = 4;
+//		numArr[4] = 5;
+//		numArr[5] = 6;
+//		numArr[6] = 7;
+//		numArr[7] = 8;
+//		numArr[8] = 9;
+//		numArr[9] = 10;
 
 		int change;
 		int length = numArr.length;
