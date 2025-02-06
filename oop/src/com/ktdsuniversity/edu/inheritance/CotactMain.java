@@ -14,6 +14,10 @@ public class CotactMain {
 		
 		emailContact1.printContact();
 		emailContact2.printContact();
+		
+		System.out.println(emailContact1.getName());
+		System.out.println(emailContact1.getPhone());
+		System.out.println(emailContact1.getEmail());
 	}
 
 }

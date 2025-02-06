@@ -18,6 +18,7 @@ public class Contact {
 	}
 
 	public void printContact() {
+		System.out.println("=========Contact printContact=========");
 		System.out.println("이름: " + this.name + ", 연락처: " + this.phone);
 	}
 }

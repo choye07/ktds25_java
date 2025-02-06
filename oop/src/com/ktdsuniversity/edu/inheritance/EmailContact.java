@@ -15,6 +15,7 @@ public class EmailContact extends Contact {
 	
 	@Override
 	public void printContact() {
+		System.out.println("=========emailContact printContact=========");
 		super.printContact();
 		System.out.println("이메일: "+ this.email);
 	}

@@ -26,16 +26,16 @@ public class Computer {
 //		
 ////		Apu tempChip = (Apu) amdChip;
 ////		tempChip.draw();
-//		if(amdChip instanceof Apu tempAmpChip) {			
-//			tempAmpChip.draw();
-//		}
+		if(amdChip instanceof Apu tempAmpChip) {			
+			tempAmpChip.draw();
+		}
 //
 //		String tempString = "asdfas";
 //		
-//		//is a 관계를 확인하는 코드
-//		System.out.println("amdChip is a Apu: "+( amdChip instanceof Apu));
-//		System.out.println( "tempString is a Apu: "+ ((Object)tempString instanceof Apu));
-//		
+		//is a 관계를 확인하는 코드
+		System.out.println("amdChip is a Apu: "+( amdChip instanceof Apu));
+		System.out.println( "tempString is a Apu: "+ ((Object)tempString instanceof Apu));
+		
 		
 		// String is a Object
 		//Apu is a Object
