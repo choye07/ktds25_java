@@ -26,7 +26,7 @@ public class Main {
 		
 		//StandardTvRemoteControl은 RemoteControl 타입.
 		RemoteControl godRemoteControl = new StandardTvRemoteControl();
-		RemoteControl danawaRemoteControl = new DanawqRemoteControl();
+		RemoteControl danawaRemoteControl = new DanawaRemoteControl();
 		
 		SamsungTV ahdTV = new SamsungTV();
 //		ahdTV.welcom(danawaRemoteControl);
