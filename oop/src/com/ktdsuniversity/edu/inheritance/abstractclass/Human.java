@@ -61,7 +61,7 @@ public class Human extends Animal {
 			System.out.println("사람 "+ this.name +" 이(가) 입이 심심함을 느낍니다. 젤리를  먹습니다.");
 		}
 		
-		System.out.println("개: " + this.name + " 배고픔 정도: "+ super.hungry);
+		System.out.println("사람" + this.name + " 배고픔 정도: "+ super.hungry);
 		
 		super.hungry -=10;
 		if (super.hungry < 0) {

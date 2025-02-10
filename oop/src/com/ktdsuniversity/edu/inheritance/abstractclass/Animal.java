@@ -21,7 +21,14 @@ public abstract class Animal {
 		this.temperature = temperature;
 		this.hungry = (int) (Math.random() * 100);
 	}
-
+	
+	
+	//추상 클래스는 이러한 흐름들을 만들 수 있다.(프로세스 가능)
+	public void live() {
+		this.movement();
+		this.breath();
+		this.eat();
+	}
 	// 추상 메소드
 	public abstract void movement();
 

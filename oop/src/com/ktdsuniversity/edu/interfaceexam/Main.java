@@ -29,12 +29,15 @@ public class Main {
 		RemoteControl danawaRemoteControl = new DanawqRemoteControl();
 		
 		SamsungTV ahdTV = new SamsungTV();
-		ahdTV.welcom(danawaRemoteControl);
-		ahdTV.goodbye(danawaRemoteControl);
+//		ahdTV.welcom(danawaRemoteControl);
+//		ahdTV.goodbye(danawaRemoteControl);
 		
 		LgTV oledTV = new LgTV();
-		oledTV.on(godRemoteControl);
-		oledTV.off(godRemoteControl);
+//		oledTV.on(godRemoteControl);
+//		oledTV.off(godRemoteControl);
+//		
+		godRemoteControl.process();
+		danawaRemoteControl.process();
 		
 		
 		

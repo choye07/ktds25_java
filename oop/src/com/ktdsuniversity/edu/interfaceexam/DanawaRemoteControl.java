@@ -1,6 +1,6 @@
 package com.ktdsuniversity.edu.interfaceexam;
 
-public class DanawqRemoteControl implements DanawaTvSignal {
+public class DanawaRemoteControl implements DanawaTvSignal,RemoteControl {
 
 	@Override
 	public void powerOn() {
@@ -9,7 +9,7 @@ public class DanawqRemoteControl implements DanawaTvSignal {
 
 	@Override
 	public void powerOff() {
-		 System.out.println("꺼져라!!");
+		System.out.println("꺼져라!!");
 	}
 	
 	/**

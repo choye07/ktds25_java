@@ -1,9 +1,11 @@
 package com.ktdsuniversity.edu.inheritance;
 
+import com.ktdsuniversity.edu.interfaceexam.RemoteControl;
+
 public class Computer {
 	
 	public static void calculateAndDraw(Cpu cpu) {
-		
+		String name = RemoteControl.manufactor;
  		System.out.println("=============Computer.calculateAndDraw==========");
    		cpu.calculate();
 		if(cpu instanceof Apu apu) {
@@ -30,7 +32,7 @@ public class Computer {
 			tempAmpChip.draw();
 		}
 //
-//		String tempString = "asdfas";
+		String tempString = "asdfas";
 //		
 		//is a 관계를 확인하는 코드
 		System.out.println("amdChip is a Apu: "+( amdChip instanceof Apu));

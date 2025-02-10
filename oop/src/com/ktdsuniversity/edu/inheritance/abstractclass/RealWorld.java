@@ -4,11 +4,12 @@ public class RealWorld {
 
 	public static void behavior(Animal animal) {
 		for(int i=0; i<50; i++) {
-			animal.movement();
-			animal.movement();
-			animal.movement();
-			animal.breath();
-			animal.eat();
+//			animal.movement();
+//			animal.movement();
+//			animal.movement();
+//			animal.breath();
+//			animal.eat();
+			animal.live();
 			
 		}
 		
@@ -17,11 +18,14 @@ public class RealWorld {
 	public static void main(String[]args) {
 		
 //		Animal dog = new Animal("hour");
-//		Animal dog = new Dog("뿌꾸","두치 집");
+		Animal dog = new Dog("뿌꾸","두치 집");
 //		behavior(dog);
 
 		Animal human = new Human("집","최예진",27);
-		behavior(human);
+//		behavior(human);
+		
+		dog.live();
+		human.live();
 		
 		
 		
