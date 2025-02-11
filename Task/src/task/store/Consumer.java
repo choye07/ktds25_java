@@ -14,13 +14,17 @@ public class Consumer {
 	 */
 	private int wallet;
 	
-	
+	/**
+	 * 생성자
+	 * @param shoppingBasket
+	 * @param wallet
+	 */
 	public Consumer(int shoppingBasket, int wallet) {
 		this.shoppingBasket = shoppingBasket;
 		this.wallet = wallet;
 	}
 
-	
+
 	public void printBasket() {
 		System.out.println("장바구니");
 		System.out.println("========================");
