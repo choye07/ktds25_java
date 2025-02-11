@@ -1,4 +1,4 @@
-package com.ktdsuniversity.edu.frutseller;
+package com.ktdsuniversity.edu.fruitseller;
 
 public class FruitSeller {
 	/**
