@@ -2,6 +2,7 @@ package task.vendingmachine;
 
 import task.vendingmachine.exceptions.ExpiredProductException;
 import task.vendingmachine.exceptions.NeedMoreMoneyException;
+import task.vendingmachine.exceptions.NotFoundException;
 import task.vendingmachine.exceptions.SoldOutException;
 
 /**
@@ -20,7 +21,7 @@ public class VendingMachine {
 	 * 소비자가 넣은 금액
 	 */
 	private int insertedMoney;
-	
+	 
 	/**
 	 * 생성자
 	 * @param drinkItem
@@ -52,7 +53,7 @@ public class VendingMachine {
 		
 		if (selectedItem == null) {
 			refund(customer);
-			throw new Exception("존재하지 않는 상품입니다.");
+			throw new NotFoundException("존재하지 않는 상품입니다.");
 		}
 
 		if (selectedItem.getUseByDate() <= 0) {
@@ -73,6 +74,12 @@ public class VendingMachine {
 		// 거래 완료
 		moneyBox += selectedItem.getPrice();
 		selectedItem.getStock();
+		for(int i = 0; i<this.drinkItem.length; i++) {
+			if(this.drinkItem[i].getProductCode() == selectedItem.getProductCode()) {
+				this.drinkItem[i].setStork(this.drinkItem[i].getStock()-1);
+				return;
+			}
+		}
 		customer.receiveProduct(selectedItem);
 
 		int change = this.insertedMoney - selectedItem.getPrice();

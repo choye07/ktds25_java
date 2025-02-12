@@ -44,7 +44,9 @@ public class DrinkItem {
 	public int getStock() {
 		return stock;
 	}
-
+	public int setStork(int stock) {
+		return this.stock = stock;
+	}
 
 	public int getUseByDate() {
 		return useByDate;
