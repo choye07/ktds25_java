@@ -4,8 +4,8 @@ package school;
 public class School {
 	public static void main(String[] args) {
 	
-		Student student1 = new Student();
-		
+		int score = (int)(Math.random()*101);
+		Student student1 = new Student(score,score,score,score);
 		student1.java = 100;
 		student1.python = 97;
 		student1.cpp = 81;
