@@ -57,6 +57,7 @@ public class OtherContactApp implements ContactAppInterface {
 
 			String newFileName = filename.substring(0, filename.lastIndexOf("."));
 			newFileName += " (" + (index++) + ").";
+			// "(%d)"i.formatted(index++);
 			newFileName += filename.substring( filename.lastIndexOf(".") + 1);
 			
 			writeFile = new File(fileDirectoryPath, newFileName);
@@ -69,6 +70,7 @@ public class OtherContactApp implements ContactAppInterface {
 			System.out.println(writeFile.getAbsolutePath());
 		}
 		catch(IOException ioe) {
+			System.out.println(ioe.getMessage());
 			ioe.printStackTrace();
 		}
 	}
