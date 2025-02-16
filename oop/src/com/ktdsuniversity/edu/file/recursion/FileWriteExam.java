@@ -25,16 +25,16 @@ public class FileWriteExam {
 			writeFile.getParentFile().mkdirs();
 			//4. 같은 이름의 파일이 이미 존재하는지 확인하기
 		}
-		int index =2;
-		while(writeFile.exists()) {
-			//5. 다른 이름의 파일이 나올 때까지 파일 명에 순번 붙이기
-			// storeProduct.txt=> storeProduct
-			String newFileName = fileName.substring(0,fileName.lastIndexOf("."));
-			newFileName += "("+(index++) +").";
-			//storeProduct(2).txt
-			newFileName += fileName.substring(fileName.lastIndexOf(".")+1);
-			writeFile = new File(directoryPath,newFileName);
-		}
+//		int index =2;
+//		while(writeFile.exists()) {
+//			//5. 다른 이름의 파일이 나올 때까지 파일 명에 순번 붙이기
+//			// storeProduct.txt=> storeProduct
+//			String newFileName = fileName.substring(0,fileName.lastIndexOf("."));
+//			newFileName += "("+(index++) +").";
+//			//storeProduct(2).txt
+//			newFileName += fileName.substring(fileName.lastIndexOf(".")+1);
+//			writeFile = new File(directoryPath,newFileName);
+//		}
 		
 		//6. 파일쓰기
 		try {
@@ -55,6 +55,10 @@ public class FileWriteExam {
 		data.add( new Product("스마트폰5", 200000, 100).toFileFormat() );
 		data.add( new Product("스마트폰6", 200000, 100).toFileFormat() );
 
-		fileWriteUseNewIO("C:\\Users\\211-17\\Desktop\\FileIOExam\\Store", "storeProduct.txt", data);
+		fileWriteUseNewIO("C:\\Users\\WIN\\Desktop\\FileIOExam\\Store", "storeProduct.txt", data);
+		
+		data.add( new Product("스마트폰7", 200000, 100).toFileFormat() );
+		fileWriteUseNewIO("C:\\Users\\WIN\\Desktop\\FileIOExam\\Store", "storeProduct.txt", data);
+
 	}
 }

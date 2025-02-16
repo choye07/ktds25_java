@@ -17,6 +17,10 @@ public class Product {
 		this.stock = stock;
 	}
 	
+	public String getName() {
+		return this.name;
+	}
+	
 	public String toFileFormat() {
 		return "%s,%d,%d".formatted(this.name, this.price, this.stock); 
 	}
